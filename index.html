@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/icono-web-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,500;1,100&family=Poppins:ital,wght@0,200;0,300;0,400;1,100&display=swap"rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!--CSS AO-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--CSS bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- JS -->
+  <script src="js/javas.js"></script>
+
+  <title>Peluquería Femenina TB</title>
+</head>
+
+<body>
+
+  <main>
+
+    <div class="circulo">circulo</div>
+
+    <header>
+      <img src="img/icono.png" alt="logo Peluqueria">
+      <h1>Peluqueria Femenina</h1>
+      <h2>Tamara Benitez</h2>
+    </header>
+
+    <section class="contenedor">
+      <div>
+        <nav>
+          <ul>
+            <li><a href="">Inicio</a> <img class="imga" id="img-inicio" src="./img//icono-corte-pelo.png" alt="" height="40px"></li>
+            <li><a href="#section-card">Peluqueria</a> <img class="imga" id="img-peluqueria" src="./img/icono-corte-pelo.png" alt="" height="40px"></li>
+            <li><a href="https://wa.link/fz28p3">Turnos</a> <img class="imga" id="img-turnos" src="./img/icono-corte-pelo.png" alt="" height="40px"></li>
+          </ul>
+        </nav>
+        <p class="parrafo">
+          TB Pelqueria Femenina no es solo un salón, es un espacio donde celebramos la autenticidad y la confianza. <br>
+          Visita es una experiencia diseñada para que te sientas empoderada y hermosa.<br>
+
+          ¡Reserva tu cita ahora y déjanos ser parte de tu viaje de belleza! <br>
+          No se trata solo de cabello, se trata de expresar quien eres.
+        </p>
+        <div class="icono-instagram">
+          <a href="https://www.instagram.com/tb_peluqueriafemenina/">
+          <img src="img/instagram-icono.png" alt="Instagram">
+          <span> tbpelqueriafemenina </span> </a>
+        </div>
+      </div>
+
+      <div id="carouselExampleInterval" class="carousel slide contenedor-carrusel" data-bs-ride="carousel">
+        <div class="carousel-inner carrusel-img">
+          <div class="carousel-item active" data-bs-interval="8000">
+            <img src="img/corte6.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="img/corte1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="img/corte4.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <div class="contenedor-card" id="section-card">
+      
+      <div class="card-group-top">
+      <!-- card1-->
+      <div class="card">
+        <div id="carousel-container1">
+          <div id="carousel1">
+            <div class="carousel-item2 first-slide"><img src="img/corte1.jpg" alt="Image 1"></div>
+            <div class="carousel-item2 second-slide"><img src="img/corte1-antes.jpeg" alt="Image 2"></div>
+          </div>
+          <div class="slide">
+            <div class="carousel-arrow prev" onclick="carousel1Controls.prevCardSlide()"><img src="img/flecha-correcta.png" alt=""></div>
+            <div class="carousel-arrow next" onclick="carousel1Controls.nextCardSlide()"><img src="img/flecha-correcta-unscreen.gif"alt=""></div>
+          </div>
+          <div class="carousel-indicators">
+            <span class="indicator" onclick="carousel1Controls.currentCardSlide(0)"></span>
+            <span class="indicator" onclick="carousel1Controls.currentCardSlide(1)"></span>
+            <!-- Agrega más indicadores según sea necesario -->
+          </div>
+        </div>
+        <!-- Puedes agregar más contenido a la tarjeta según sea necesario -->
+        <div class="card-content">
+          <h2>Iluminacion y Corte</h2>
+          <p>Se realizó un tratamiento de hidratación profunda para revitalizar el cabello y se realizó un corte para mejorar su apariencia.</p>
+        </div>
+      </div>
+
+      <!-- card2-->
+      <div class="card">
+        <div id="carousel-container2">
+          <div id="carousel2">
+            <div class="carousel-item2 first-slide"><img src="img/corte11.jpg" alt="Image 1"></div>
+            <div class="carousel-item2 second-slide"><img src="img/corte11-1.jpeg" alt="Image 2"></div>
+          </div>
+          <div class="slide">
+            <div class="carousel-arrow prev" onclick="carousel2Controls.prevCardSlide()"><img src="img/flecha-correcta.png" alt=""></div>
+            <div class="carousel-arrow next" onclick="carousel2Controls.nextCardSlide()"><img src="img/flecha-correcta-unscreen.gif"alt=""></div>
+          </div>
+          <div class="carousel-indicators">
+            <span class="indicator" onclick="carousel2Controls.currentCardSlide(0)"></span>
+            <span class="indicator" onclick="carousel2Controls.currentCardSlide(1)"></span>
+            <!-- Agrega más indicadores según sea necesario -->
+          </div>
+        </div>
+        <!-- Puedes agregar más contenido a la tarjeta según sea necesario -->
+        <div class="card-content">
+          <h2>Pre-pigmentacion, color y corte</h2>
+          <p>Se realizó una pre-pigmentación para intensificar el color, seguido de la aplicación del color final y un corte de cabello.</p>
+        </div>
+      </div>
+
+      <!-- card3-->
+      <div class="card">
+        <div id="carousel-container3">
+          <div id="carousel3">
+            <div class="carousel-item2 first-slide"><img src="img/corte13.jpg" alt="Image 1"></div>
+            <div class="carousel-item2 second-slide"><img src="img/corte13-antes.jpeg" alt="Image 2"></div>
+          </div>
+          <div class="slide">
+            <div class="carousel-arrow prev" onclick="carousel3Controls.prevCardSlide()"><img src="img/flecha-correcta.png" alt=""></div>
+            <div class="carousel-arrow next" onclick="carousel3Controls.nextCardSlide()"><img src="img/flecha-correcta-unscreen.gif"alt=""></div>
+          </div>
+          <div class="carousel-indicators">
+            <span class="indicator" onclick="carousel3Controls.currentCardSlide(0)"></span>
+            <span class="indicator" onclick="carousel3Controls.currentCardSlide(1)"></span>
+            <!-- Agrega más indicadores según sea necesario -->
+          </div>
+        </div>
+        <!-- Puedes agregar más contenido a la tarjeta según sea necesario -->
+        <div class="card-content">
+          <h2>Color Rojizo Tendencia</h2>
+          <p>Se realizó un tratamiento de células madre, coloración y corte de cabello.</p>
+        </div>
+      </div>
+      </div>
+      <div class="card-group-bottom">
+      <!-- card4-->
+      <div class="card">
+        <div id="carousel-container4">
+          <div id="carousel4">
+            <div class="carousel-item2 first-slide"><img src="img/corte12-1.jpg" alt="Image 1"></div>
+            <div class="carousel-item2 second-slide"><img src="img/corte12-antes.jpeg" alt="Image 2"></div>
+          </div>
+          <div class="slide">
+            <div class="carousel-arrow prev" onclick="carousel4Controls.prevCardSlide()"><img src="img/flecha-correcta.png" alt=""></div>
+            <div class="carousel-arrow next" onclick="carousel4Controls.nextCardSlide()"><img src="img/flecha-correcta-unscreen.gif"alt=""></div>
+          </div>
+          <div class="carousel-indicators">
+            <span class="indicator" onclick="carousel4Controls.currentCardSlide(0)"></span>
+            <span class="indicator" onclick="carousel4Controls.currentCardSlide(1)"></span>
+            <!-- Agrega más indicadores según sea necesario -->
+          </div>
+        </div>
+        <!-- Puedes agregar más contenido a la tarjeta según sea necesario -->
+        <div class="card-content">
+          <h2>Claritos</h2>
+          <p>Se aplicaron mechas con la técnica de gorro, tratamiento de nutrición y corte de cabello.</p>
+        </div>
+      </div>
+
+
+      <!-- card5-->
+      <div class="card">
+        <div id="carousel-container5">
+          <div id="carousel5">
+            <div class="carousel-item2 first-slide"><img src="img/corte12-1.jpg" alt="Image 1"></div>
+            <div class="carousel-item2 second-slide"><img src="img/corte12-antes.jpeg" alt="Image 2"></div>
+          </div>
+          <div class="slide">
+            <div class="carousel-arrow prev" onclick="carousel5Controls.prevCardSlide()"><img src="img/flecha-correcta.png" alt=""></div>
+            <div class="carousel-arrow next" onclick="carousel5Controls.nextCardSlide()"><img src="img/flecha-correcta-unscreen.gif"alt=""></div>
+          </div>
+          <div class="carousel-indicators">
+            <span class="indicator" onclick="carousel5Controls.currentCardSlide(0)"></span>
+            <span class="indicator" onclick="carousel5Controls.currentCardSlide(1)"></span>
+            <!-- Agrega más indicadores según sea necesario -->
+          </div>
+        </div>
+        <!-- Puedes agregar más contenido a la tarjeta según sea necesario -->
+        <div class="card-content">
+          <h2>Claritos</h2>
+          <p>Se aplicaron mechas con la técnica de gorro, tratamiento de nutrición y corte de cabello.</p>
+        </div>
+      </div>
+
+
+         <!-- card6-->
+         <div class="card">
+          <div id="carousel-container6">
+            <div id="carousel6">
+              <div class="carousel-item2 first-slide"><img src="img/corte12-1.jpg" alt="Image 1"></div>
+              <div class="carousel-item2 second-slide"><img src="img/corte12-antes.jpeg" alt="Image 2"></div>
+            </div>
+            <div class="slide">
+              <div class="carousel-arrow prev" onclick="carousel6Controls.prevCardSlide()"><img src="img/flecha-correcta.png" alt=""></div>
+              <div class="carousel-arrow next" onclick="carousel6Controls.nextCardSlide()"><img src="img/flecha-correcta-unscreen.gif"alt=""></div>
+            </div>
+            <div class="carousel-indicators">
+              <span class="indicator" onclick="carousel6Controls.currentCardSlide(0)"></span>
+              <span class="indicator" onclick="carousel6Controls.currentCardSlide(1)"></span>
+              <!-- Agrega más indicadores según sea necesario -->
+            </div>
+          </div>
+          <!-- Puedes agregar más contenido a la tarjeta según sea necesario -->
+          <div class="card-content">
+            <h2>Claritos</h2>
+            <p>Se aplicaron mechas con la técnica de gorro, tratamiento de nutrición y corte de cabello.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ver-mas">
+      <a href="https://www.instagram.com/tb_peluqueriafemenina/"> Ver mas</a>
+    </div>
+
+    <!-- Botón de WhatsApp -->
+    <div class="whatsapp-float">
+      <a href="https://wa.link/fz28p3" class="whatsapp-button-float" target="_blank">
+        <img src="img/logo-wp-01.png" alt="WhatsApp">
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </main>
+  <footer>Todos los derechos reservados Peluqueria Femenina TB </footer>
+  <!--JS bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!--JS lordicon-->
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  <!-- js AO -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

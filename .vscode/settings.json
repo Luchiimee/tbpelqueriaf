@@ -1,0 +1,10 @@
+{
+    "liveServer.settings.port": 5501,
+    "window.autoDetectColorScheme": false,
+    "window.closeWhenEmpty": true,
+    "window.confirmSaveUntitledWorkspace": false,
+    "window.density.editorTabHeight": "default",
+    "files.autoSave": "afterDelay",
+    "workbench.cloudChanges.autoResume": "off",
+    "workbench.experimental.cloudChanges.autoStore": "onShutdown"
+}

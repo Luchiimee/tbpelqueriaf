@@ -1,0 +1,447 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+
+  font-family: 'Josefin Sans', sans-serif;
+  background-color:#c421c4a8; 
+  max-width: 100%;
+  overflow-x: hidden;
+  
+
+}
+main{
+  margin: 0 auto;
+  overflow-x:hidden ;
+}
+header{
+ text-align: center;
+ margin: 10px;
+}
+header img{
+  height: 100px;
+  margin: 0;
+  
+}
+
+nav{
+text-align: center;
+margin: 0px auto;
+margin-bottom: 30px;
+width: 100%;
+}
+ul{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 100%;
+  
+}
+li, a{
+  list-style:none;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+li{
+  height: 60px;
+ 
+}
+li a{
+  font-size: 1.5em;
+  color: #ecf0f1;
+  
+}
+
+.imga {
+  position: relative;
+  bottom: -2px;
+    left: 35%;
+    opacity: 0;
+    transition: opacity 10 ease-in;
+    display: none;
+    text-align: center;
+}
+
+li:hover .imga {
+  display: block;
+  opacity: 1;
+  text-align: center;
+}
+#img-inicio {
+  display: block;
+  margin-right:100px;
+}
+
+#img-peluqueria {
+  display: block;
+}
+
+#img-turnos {
+  display: block;
+  margin-right: 100px;
+}
+
+
+
+
+
+section.contenedor {
+  display: flex;
+  margin: 20px auto;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+
+  text-align: center;
+  flex-wrap: wrap;
+  
+  
+
+}
+.contenedor p{
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 25px;
+  text-align: center;
+  line-height: 2;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-item img{
+  padding: 10px;
+  border-radius: 100px;
+  box-shadow:inset 0px 0px 7px 1px #000;
+  width: 100%;
+  height: 600px;
+ 
+ 
+  
+}
+.contenedor-carrusel{
+max-width: 400px;
+
+}
+
+
+/* boton wp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1000;
+  background-color: rgb(37, 212, 101);
+  margin: auto;
+  border-radius: 30px;
+  overflow: hidden; 
+  transition: width 0.3s; 
+}
+
+.whatsapp-button-float {
+  display: flex;
+  align-items: center;
+  padding: 10px 1px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  width: 60px; /* Ajusta el ancho inicial */
+  height: 50px;
+  
+  transition: width 0.3s; /* Agrega esto para una transición suave */
+}
+
+.whatsapp-button-float img {
+  width: 60px;
+  height: auto;
+  display: flex;
+  align-items:center;
+  text-align: center;
+  transition: opacity 0.3s; /* Agrega esto para una transición suave */
+  
+
+}
+
+.whatsapp-float:hover .whatsapp-button-float {
+  width: 120px; /* Ajusta el ancho en hover */
+  
+  margin-left: 3px;
+  width: 140px;
+  
+}
+
+.whatsapp-float:hover .whatsapp-button-float img {
+  opacity: 1; /* Muestra la imagen en hover */
+}
+
+.whatsapp-float span {
+  color: white;
+  margin-left: -12px;
+  font-size: 16px;
+  opacity: 0; /* Oculta el texto inicialmente */
+  transition: opacity 0.3s; /* Agrega esto para una transición suave */
+}
+
+.whatsapp-float:hover span {
+  opacity: 1; /* Muestra el texto en hover */
+}
+
+
+
+  
+
+  
+
+/*footer */
+footer {
+  background-color: #545454;
+  text-align: center;
+  font-size:small;
+  align-items: center;
+  color: azure;
+  padding: 5px;
+  width: 100%;
+}
+
+
+.circulo{
+  clip-path: circle(910px at left 0px);
+  width: 100%;
+  height: 100%;
+  background: #dc26b7;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  z-index: -100;
+  margin-top: -100px;
+ 
+}
+
+@media (max-width:470px) {
+  nav ul{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    
+  }
+  nav li{
+    margin: 10px auto;
+  }
+
+  .contenedor nav ul{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .circulo{
+    clip-path: circle(400px at left 0px);
+    width: 100%;
+    height: 100%;
+    background: #dc26b7;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: -100;
+    margin-top: -100px;
+   
+  }
+  
+}
+
+@media (min-width: 471px) and (max-width: 1024px) {
+
+  .circulo{
+    clip-path: circle(500px at left 0px);
+    width: 100%;
+    height:580px;
+    background: #dc26b7;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: -100;
+    margin-top: -100px;
+   
+  }
+
+
+}
+
+.card {
+  
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 45px auto;
+  max-width: 300px;
+  background-color: aliceblue;
+  margin: 15px auto;
+  max-height: 700px;
+  box-shadow: #000 8px 10px 0px 0px;
+  border: solid 1px ;
+  flex: 0 0 calc(33% - 20px); /* Ajustar el ancho de las tarjetas para tres en una fila con espaciado */
+  
+  
+}
+
+#carousel-container1,
+#carousel-container2,
+#carousel-container3,
+#carousel-container4,
+#carousel-container5,
+#carousel-container6 {
+  position: relative;
+  overflow: hidden;
+}
+
+#carousel1,
+#carousel2,
+#carousel3,
+#carousel4,
+#carousel5,
+#carousel6{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 10px;
+  padding: 1px;
+}
+#carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 10px;
+  padding: 1px;
+}
+
+.carousel-item2 {
+  flex: 0 0 auto; /* Evita que las imágenes se estiren para ajustarse */
+  max-width: 100%;
+  padding: 5px;
+  
+}
+.carousel-item2 img{
+  display: block; /* Asegura que la imagen no tenga espacios en blanco debajo */
+  border-radius: 10px;
+  max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+  max-height: 100%;
+}
+
+
+
+.carousel-indicators {
+  text-align: center;
+ 
+}
+
+.indicator {
+  
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: -10px 5px;
+  margin-top: 10px;
+  background-color: #d4d3d3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: #555;
+ 
+}
+
+.carousel-arrow {
+ display: inline;
+ margin: 0 auto;
+ 
+}
+
+.prev img{
+  width: 9%;
+  transform: rotate(180deg);
+  margin-left: 5px;
+  cursor: pointer;
+ 
+}
+
+.next img {
+  width: 10%;
+  margin-left: 220px;
+  cursor: pointer;
+}
+
+
+.card-content{
+margin-top: 10px;
+text-align: center;
+padding: 5px;
+}
+.card-group-top,
+.card-group-bottom {
+  margin: 20px auto;
+  flex: 1; /* Para ocupar el mismo espacio */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Alinear las tarjetas arriba */
+  flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan en filas */
+  justify-content: space-around; /* Distribuir las tarjetas horizontalmente */
+  max-width: 100%; /* Asegurar que las tarjetas no excedan el ancho del contenedor */
+  align-items: stretch;
+}
+
+
+.ver-mas {
+  margin: 20px auto; /* Agrega margen superior e inferior automático para centrar verticalmente */
+  text-align: center; /* Centra horizontalmente el contenido */
+  width: fit-content; /* Ajusta el ancho del contenedor al contenido */
+  font-size: x-large;
+  border: solid 1px;
+  border-radius: 20px  20px  0px  20px;
+  display: block;
+  padding: 8px;
+  box-shadow: #000 8px 10px 0px 0px;
+
+}
+.ver-mas a{
+  color: white;
+}
+
+
+.icono-instagram{
+  margin-top: 20px;
+  border: solid;
+  border-radius: 20px  0px  20px  0px;
+  padding: 5px;
+  padding: 0;
+  display: inline-block;
+  padding: 8px;
+  box-shadow: #000 8px 10px 0px 0px;
+}
+.icono-instagram > a{
+ color:white;
+ font-size: 1.5em;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .card-group-top,
+  .card-group-bottom {
+    flex-direction: column; /* Cambia la dirección de las tarjetas a una columna */
+    align-items: center; /* Alinea las tarjetas al centro */
+  }
+}
+
