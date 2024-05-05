@@ -196,20 +196,6 @@ max-width: 400px;
 
 
 
-  
-
-  
-
-/*footer */
-footer {
-  background-color: #545454;
-  text-align: center;
-  font-size:small;
-  align-items: center;
-  color: azure;
-  padding: 5px;
-  width: 100%;
-}
 
 
 .circulo{
@@ -443,5 +429,11 @@ padding: 5px;
     flex-direction: column; /* Cambia la dirección de las tarjetas a una columna */
     align-items: center; /* Alinea las tarjetas al centro */
   }
+}
+
+footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 5px;
 }
 
